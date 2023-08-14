@@ -1,0 +1,9 @@
+default:
+  oauth_key: ""
+  oauth_secret: ""
+  app_url: ""
+  postgis_host: "postgis" # this should be the name of the service in docker swarm
+  postgis_port: 5432
+  postgis_dbname: "operations_db"
+  postgis_username: "admin"
+  postgis_password: "test"
