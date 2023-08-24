@@ -72,12 +72,6 @@ On the worker node, run to install docker:
 
 For the manager node in the swarm, execute `./scripts/create_firewalls_manager.sh` from the `deploy-maplandscape` directory.
 
-If permissions on `create_firewalls_manager.sh` are denied:
-
-```
-chmod 700 ./scripts/create_firewalls_manager.sh
-```
-
 ### Worker Node
 
 Follow a similar process for worker nodes. If required, use `scp` to copy `create_firewalls_worker.sh` from the manager node to the worker node. 
@@ -89,12 +83,6 @@ And, create the firewalls for the worker node:
 
 ```
 ./scripts/create_firewalls_worker.sh
-```
-
-If permissions on `create_firewalls_worker.sh` are denied:
-
-```
-chmod 700 ./scripts/create_firewalls_worker.sh
 ```
 
 More information on configuring firewalls for Docker Swarm [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04) and [here](https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04).
